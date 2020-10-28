@@ -4,7 +4,7 @@ gtk.init()
 bld=gtk.Builder()
 bld:add_from_file('lab-01.glade')
 ui=bld.objects
-ui.wind.title='lab-01'
+ui.wind.title = 'lab-01'
 ui.wind.on_destroy=gtk.main_quit
 ui.wind:show_all()
 gtk.main()
