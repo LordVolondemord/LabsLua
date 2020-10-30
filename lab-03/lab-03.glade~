@@ -2,7 +2,9 @@
 <!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="gtk+" version="3.20"/>
-  <object class="GtkWindow">
+  <object class="GtkWindow" id="wnd">
+    <property name="width_request">500</property>
+    <property name="height_request">250</property>
     <property name="can_focus">False</property>
     <child>
       <placeholder/>
@@ -43,6 +45,7 @@
           <object class="GtkRadioButton" id="A">
             <property name="label" translatable="yes">A</property>
             <property name="visible">True</property>
+            <property name="sensitive">False</property>
             <property name="can_focus">True</property>
             <property name="receives_default">False</property>
             <property name="active">True</property>
@@ -57,6 +60,7 @@
           <object class="GtkRadioButton" id="B">
             <property name="label" translatable="yes">B</property>
             <property name="visible">True</property>
+            <property name="sensitive">False</property>
             <property name="can_focus">True</property>
             <property name="receives_default">False</property>
             <property name="active">True</property>
@@ -72,6 +76,7 @@
           <object class="GtkRadioButton" id="C">
             <property name="label" translatable="yes">C</property>
             <property name="visible">True</property>
+            <property name="sensitive">False</property>
             <property name="can_focus">True</property>
             <property name="receives_default">False</property>
             <property name="active">True</property>
@@ -87,6 +92,7 @@
           <object class="GtkRadioButton" id="D">
             <property name="label" translatable="yes">D</property>
             <property name="visible">True</property>
+            <property name="sensitive">False</property>
             <property name="can_focus">True</property>
             <property name="receives_default">False</property>
             <property name="active">True</property>
@@ -99,10 +105,14 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="valueLabel">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label" translatable="yes">label</property>
+            <property name="label" translatable="yes">Value</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 10"/>
+              <attribute name="foreground" value="#efef29292929"/>
+            </attributes>
           </object>
           <packing>
             <property name="left_attach">0</property>
